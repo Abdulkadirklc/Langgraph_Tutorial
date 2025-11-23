@@ -1,11 +1,7 @@
-# Langgraph_Tutorial
+# Langgraph Tutorial
 
-Welcome to Langgraph_Tutorial!  
+Welcome to Langgraph Tutorial!  
 This repository is a practical guide for anyone new to the LangChain ecosystem, with a focus on LangGraph. As an example you will learn how to build a LinkedIn post generator agent that uses multi-threaded memory and web search.
-
-## Repository
-
-GitHub: [Langgraph_Tutorial](https://github.com/Abdulkadirklc/Langgraph_Tutorial)
 
 ## Features
 
@@ -72,7 +68,7 @@ You need a Google Gemini API key.
 	export GOOGLE_API_KEY="your-gemini-api-key"
 	```
 
-**Option 2: Enter in Notebook**
+**Option 2: Enter in Notebook (Recommended)**
 
 If not set, the notebook will prompt you to enter your API key interactively.
 
