@@ -89,3 +89,15 @@ If not set, the notebook will prompt you to enter your API key interactively.
 ## Example Output
 
 The notebook will display the agent graph and show interactive logs for each step, including web search, draft writing, editing, and publishing.
+
+## LangChain v1.0 vs LangGraph v1.0 for this project
+
+| Feature                  | LangChain v1.0 create_agent         | LangGraph                |
+|-------------------------|-------------------------------------|--------------------------|
+| Basic agent loop        | ✅ Automatic                        | ✅ Explicit               |
+| Custom branching logic  | ⚠️ Via middleware                   | ✅ Yes (Command)          |
+| Loop back to previous node | ❌ No                            | ✅ Yes                    |
+| Human interrupts        | ✅ Yes (HumanInTheLoopMiddleware)   | ✅ Yes (interrupt_before) |
+| Multi-stage workflows   | ⚠️ Via middleware hooks             | ✅ Yes (multiple nodes)   |
+| State persistence       | ✅ Via checkpointer                 | ✅ Full (MemorySaver)     |
+| Thread isolation        | ⚠️ Via context                      | ✅ Yes (thread_id)        |
